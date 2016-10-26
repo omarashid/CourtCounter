@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Team A button data
-     * @param v
      */
     public void threePointerA (View v){
       scoreTeamA = scoreTeamA + 3;
@@ -56,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Team B button data
-     * @param v
      */
     public void threePointerB (View v){
         scoreTeamB = scoreTeamB + 3;
@@ -72,6 +70,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void onePointerB (View v){
         scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
+    }
+
+    /**
+     * Reset button command
+     */
+    public void resetButton (View v){
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
     }
 }
